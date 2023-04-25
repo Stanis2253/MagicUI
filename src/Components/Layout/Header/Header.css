@@ -1,0 +1,49 @@
+@import '~bootstrap/dist/css/bootstrap-grid.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url("../../UI/Color.css");
+
+*{
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.header {
+    width: 100%;
+}
+
+
+.input{
+    height: 70px;
+    border-radius: 10px;
+    border-color: #64777C;
+}
+
+.main-image {
+    width: 100%;
+    height: 25rem;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+.square{
+    width: 75px;
+    height: 70px;
+}
+.buttonHeader{
+    background-color: var(--main-bg-color);
+    border-color: var(--border-color);
+    border-radius: 10px;
+}
+.buttonNav{
+    padding: unset;
+    height: 30px;
+    background-color: var(--main-bg-color);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+.img{
+    width: 75%;
+}
+
+
+
