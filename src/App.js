@@ -1,9 +1,8 @@
 import Home from"./Components/Pages/Home/Home"
-import Category from"./Components/Pages/Category/Category"
-import Manufacturer from"./Components/Pages/Manufacturer/Manufacturer"
+import Products from "./Components/Pages/Product/Products"
 import Point from"./Components/Pages/Point/Point"
 import Delivery from"./Components/Pages/Delivery/Delivery"
-
+import "./App.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./Components/Layout/Header/Header";
 import Footer from "./Components/Layout/Footer/Footer";
@@ -13,13 +12,15 @@ function App() {
   return (
             <div>
                 <Header/>
-                        <Routes>
-                            <Route path={"/Home"} element={<Home/>}/>
-                            <Route path={"/Category"} element={<Category/>}/>
-                            <Route path={"/Delivery"} element={<Delivery/>}/>
-                            <Route path={"/Manufacturer"} element={<Manufacturer/>}/>
-                            <Route path={"/Point"} element={<Point/>}/>
-                        </Routes>
+                <div className={"block"}>
+                    <Routes>
+                        <Route path={"/Home"} element={<Home/>}/>
+                        <Route path={"/Product"} element={<Products/>}/>
+                        <Route path={"/Delivery"} element={<Delivery/>}/>
+                        <Route path={"/Point"} element={<Point/>}/>
+                    </Routes>
+                </div>
+
                 <Footer/>
             </div>
 

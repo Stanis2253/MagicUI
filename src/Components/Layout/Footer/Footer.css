@@ -1,0 +1,8 @@
+@import url("../../UI/Color.css");
+.footer{
+    color: var(--text-color);
+}
+.title{
+    border-bottom: 3px solid var(--border-color);
+    text-align: center;
+}

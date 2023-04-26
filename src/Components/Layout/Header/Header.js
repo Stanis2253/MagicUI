@@ -15,40 +15,84 @@ const Header = (props) => {
         <div className="header" >
             <Navbar  collapseOnSelect expand={"lg"} variant={"dark"}>
                 <Container>
-                    <Navbar.Brand>
-                        <img src={logo} className={"square"}/>
-                    </Navbar.Brand>
+
+                    <div className={"col-1"}>
+                        <Link to={"/Home"}>
+                            <Navbar.Brand >
+                                <img src={logo} className={"square"}/>
+                            </Navbar.Brand>
+                        </Link>
+                    </div>
 
                         <input className={"input col-7"}/>
-                        <Button className={"square buttonHeader"}>
+
+                        <Button className={"square buttonHeader col-1"}>
                             <img src={searchBtn} className={"img"}/>
                         </Button>
-                        <Button className={"square buttonHeader"}>
+
+                        <Button className={"square buttonHeader col-1"}>
                             <img src={cart} className={"img"}/>
                         </Button>
-                        <Button className={"square buttonHeader"}>
+
+                        <Button className={"square buttonHeader col-1"}>
                             <img src={authoImg} className={"img"}/>
                         </Button>
+
+
                 </Container>
             </Navbar>
             <Navbar>
-                <Container>
-                    <Button className={"col-2 buttonNav"}>
-                        <span>Главная</span>
-                    </Button>
-                    <Button className={"col-2 buttonNav"}>
-                        <span>Категории</span>
-                    </Button>
-                    <Button className={"col-2 buttonNav"}>
-                        <span>Бренды</span>
-                    </Button>
-                    <Button className={"col-2 buttonNav"}>
-                        <span>Доставка</span>
-                    </Button>
-                    <Button className={"col-2 buttonNav"}>
-                        <span>Самовывоз</span>
-                    </Button>
+                <Container className={"navigation"}>
+                    <Link to={"/Home"} className={"col-2"}>
+                        <Button className={"buttonNav"}>
+                            <span>Главная</span>
+                        </Button>
+                    </Link>
+
+                    <Link to={"/Product"} className={"col-2"}>
+                        <Button className={"buttonNav"}>
+                            <span>Товары</span>
+                        </Button>
+                    </Link>
+                    <Link to={"/Point"} className={"col-2"}>
+                        <Button className={"buttonNav"}>
+                            <span>Самовывоз</span>
+                        </Button>
+                    </Link>
+                    <Link to={"/Delivery"} className={"col-2"}>
+                        <Button className={"buttonNav"}>
+                            <span>Доставка</span>
+                        </Button>
+                    </Link>
+                    <div className={"col-2"}>
+
+                    </div>
                 </Container>
+                {/*<Container className={"navigation"} >*/}
+                {/*    <Nav variant="tabs" defaultActiveKey="/home" >*/}
+                {/*        <Nav.Item className={"col-3"}>*/}
+                {/*            <Nav.Link href="/Home">*/}
+                {/*                Главная*/}
+                {/*            </Nav.Link>*/}
+                {/*        </Nav.Item>*/}
+                {/*        <Nav.Item className={"col-3"}>*/}
+                {/*            <Nav.Link href="/Product">*/}
+                {/*                Товар*/}
+                {/*            </Nav.Link>*/}
+                {/*        </Nav.Item>*/}
+                {/*        <Nav.Item className={"col-3"}>*/}
+                {/*            <Nav.Link  href="/Home">*/}
+                {/*                Доставка*/}
+                {/*            </Nav.Link>*/}
+                {/*        </Nav.Item>*/}
+                {/*        <Nav.Item className={"col-3"}>*/}
+                {/*            <Nav.Link  href="/Home">*/}
+                {/*                Самовывоз*/}
+                {/*            </Nav.Link>*/}
+                {/*        </Nav.Item>*/}
+                {/*    </Nav>*/}
+                {/*</Container>*/}
+
 
             </Navbar>
         </div>

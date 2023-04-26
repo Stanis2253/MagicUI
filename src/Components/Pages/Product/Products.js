@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Point = () => {
+const Products = () => {
     return (
         <div>
-            <h1>Point</h1>
+            <h1>Products</h1>
         </div>
     );
 };
 
-export default Point;
+export default Products;

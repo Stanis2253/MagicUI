@@ -1,27 +1,24 @@
 import React from 'react';
-import styles from './Footer.module.css'
-import CardFooter from "../../UI/CardFooter";
-import {Container} from "react-bootstrap";
+import './Footer.css'
+import {Container, Row, Col} from "react-bootstrap";
+
 
 const Footer = (props) => {
     return (
         <React.Fragment>
-            <Container>
-                    <div >
-                        <CardFooter Title={"О нас"}>
+            <Container className={"footer"}>
+                <Row>
+                    <Col className={"col-4"}>
+                        <h1 className={"title"}>Компания</h1>
+                    </Col>
+                    <Col>
+                        <h1 className={"title"}>Для клиентов</h1>
+                    </Col>
+                    <Col>
+                        <h1 className={"title"}>Контакты</h1>
+                    </Col>
 
-                        </CardFooter>
-                    </div>
-                    <div >
-                        <CardFooter Title={"Для клиентов"}>
-
-                        </CardFooter>
-                    </div>
-                    <div >
-                        <CardFooter Title={"Контакты"}>
-
-                        </CardFooter>
-                    </div>
+                </Row>
             </Container>
         </React.Fragment>
     );
