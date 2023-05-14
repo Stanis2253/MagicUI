@@ -1,10 +1,13 @@
 import React from 'react';
+import {Container} from "react-bootstrap";
 
 const Point = () => {
     return (
-        <div>
-            <h1>Point</h1>
-        </div>
+        <React.Fragment>
+            <Container>
+
+            </Container>
+        </React.Fragment>
     );
 };
 

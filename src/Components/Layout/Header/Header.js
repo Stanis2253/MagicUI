@@ -68,32 +68,6 @@ const Header = (props) => {
 
                     </div>
                 </Container>
-                {/*<Container className={"navigation"} >*/}
-                {/*    <Nav variant="tabs" defaultActiveKey="/home" >*/}
-                {/*        <Nav.Item className={"col-3"}>*/}
-                {/*            <Nav.Link href="/Home">*/}
-                {/*                Главная*/}
-                {/*            </Nav.Link>*/}
-                {/*        </Nav.Item>*/}
-                {/*        <Nav.Item className={"col-3"}>*/}
-                {/*            <Nav.Link href="/Product">*/}
-                {/*                Товар*/}
-                {/*            </Nav.Link>*/}
-                {/*        </Nav.Item>*/}
-                {/*        <Nav.Item className={"col-3"}>*/}
-                {/*            <Nav.Link  href="/Home">*/}
-                {/*                Доставка*/}
-                {/*            </Nav.Link>*/}
-                {/*        </Nav.Item>*/}
-                {/*        <Nav.Item className={"col-3"}>*/}
-                {/*            <Nav.Link  href="/Home">*/}
-                {/*                Самовывоз*/}
-                {/*            </Nav.Link>*/}
-                {/*        </Nav.Item>*/}
-                {/*    </Nav>*/}
-                {/*</Container>*/}
-
-
             </Navbar>
         </div>
     )

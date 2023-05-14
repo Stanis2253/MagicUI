@@ -2,14 +2,14 @@ import chainsaw from "../../Resources/HomeImg/chainsaw.jpg"
 import bicycle from "../../Resources/HomeImg/bicycle.jpg"
 import spares from "../../Resources/HomeImg/spares.jpg"
 import trimmer from "../../Resources/HomeImg/trimmer.jpg"
+import bicyclesCard from "../../Resources/HomeImg/bicyclesCard.jpg"
 import chainsawCard from "../../Resources/HomeImg/chainsawCard.jpg"
 import trimmerCard from "../../Resources/HomeImg/trimmerCard.png"
 import sparcesCard from "../../Resources/HomeImg/sparesCard.jpg"
 import "./Home.css"
 import React from 'react';
 import {CardGroup, Carousel, Col, Container, Row} from "react-bootstrap";
-import Card from 'react-bootstrap/Card';
-import {Link} from "react-router-dom";
+import CardCategory from "./CardCategory";
 
 const Home = () => {
     return (
@@ -59,37 +59,19 @@ const Home = () => {
                 </h1>
                 <br/>
 
-                <div className={"category "}>
+                <div >
                     <Row xs={2} md={4} className="g-4">
                         <Col  >
-                            <Link to={"/"} className={"d-inline-block col-2 popCategory w-100"}>
-                                <Card >
-                                    <Card.Img  variant="top" src={chainsawCard} />
-                                    <Card.Body>
-                                        <Card.Title>Бензопилы</Card.Title>
-                                    </Card.Body>
-                                </Card>
-                            </Link>
+                            <CardCategory Link={"/"} Title={"Бензопилы"} Img={chainsawCard}></CardCategory>
                         </Col>
                         <Col>
-                            <Link to={"/"} className={"d-inline-block col-2 popCategory w-100"}>
-                                <Card >
-                                    <Card.Img variant="top" src={trimmerCard} />
-                                    <Card.Body>
-                                        <Card.Title>Триммеры</Card.Title>
-                                    </Card.Body>
-                                </Card>
-                            </Link>
+                            <CardCategory Link={"/"} Title={"Триммеры"} Img={trimmerCard}></CardCategory>
                         </Col>
                         <Col>
-                            <Link to={"/"} className={"d-inline-block col-2 popCategory w-100"}>
-                                <Card >
-                                    <Card.Img variant="top" src={sparcesCard} />
-                                    <Card.Body>
-                                        <Card.Title>Запчасти</Card.Title>
-                                    </Card.Body>
-                                </Card>
-                            </Link>
+                            <CardCategory Link={"/"} Title={"Запчасти"} Img={sparcesCard}></CardCategory>
+                        </Col>
+                        <Col>
+                            <CardCategory Link={"/"} Title={"Велосипеды"} Img={bicyclesCard}></CardCategory>
                         </Col>
 
                     </Row>
