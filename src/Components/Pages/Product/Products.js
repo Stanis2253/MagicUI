@@ -16,8 +16,6 @@ const Products = () => {
 
                 </Row>
             </Container>
-
-
         </React.Fragment>
     );
 };

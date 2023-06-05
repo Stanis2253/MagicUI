@@ -13,7 +13,7 @@ import {Link} from "react-router-dom";
 const Header = (props) => {
     return(
         <div className="header" >
-            <Navbar  collapseOnSelect expand={"lg"} variant={"dark"}>
+            <Navbar  >
                 <Container>
 
                     <div className={"col-1"}>
@@ -24,26 +24,25 @@ const Header = (props) => {
                         </Link>
                     </div>
 
-                        <input className={"input col-7"}/>
+                    <input className={"input col-7"}/>
 
-                        <Button className={"square buttonHeader col-1"}>
-                            <img src={searchBtn} className={"img"}/>
-                        </Button>
+                    <Button className={"square buttonHeader col-1"}>
+                        <img src={searchBtn} className={"img"}/>
+                    </Button>
 
-                        <Button className={"square buttonHeader col-1"}>
-                            <img src={cart} className={"img"}/>
-                        </Button>
-
-                        <Button className={"square buttonHeader col-1"}>
+                    <Button className={"square buttonHeader col-1"}>
+                        <img src={cart} className={"img"}/>
+                    </Button>
+                    <Link to={"/Authorization"} className={"col-1"}>
+                        <Button className={"square w-100 buttonHeader"}>
                             <img src={authoImg} className={"img"}/>
                         </Button>
-
-
+                    </Link>
                 </Container>
             </Navbar>
             <Navbar>
-                <Container className={"navigation"}>
-                    <Link to={"/Home"} className={"col-2"}>
+                <Container  className={"navigation"}>
+                    <Link to={"/"} className={"col-2"}>
                         <Button className={"buttonNav"}>
                             <span>Главная</span>
                         </Button>
@@ -64,9 +63,12 @@ const Header = (props) => {
                             <span>Доставка</span>
                         </Button>
                     </Link>
-                    <div className={"col-2"}>
+                    <Link to={"/Admin"} className={"col-2"}>
+                        <Button className={"buttonNav"}>
+                            <span>Администрирование</span>
+                        </Button>
+                    </Link>
 
-                    </div>
                 </Container>
             </Navbar>
         </div>

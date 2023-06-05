@@ -1,10 +1,11 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import {Button} from "react-bootstrap";
+import "./ProductItem.css"
 
 const ProductItem = (props) => {
     return (
-        <div>
+        <div className={"productItem"}>
             <Row>
                 <Col >
                     <img className={"imageProduct"} src={props.Path}/>

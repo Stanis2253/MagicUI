@@ -47,6 +47,12 @@ const Footer = (props) => {
                     </Col>
                     <Col>
                         <h1 className={"title"}>Контакты</h1>
+                        <p>
+                            <Row>
+                                <iframe src="https://yandex.ru/sprav/widget/rating-badge/112758141157?type=rating" width="150"
+                                        height="50" frameBorder="0"></iframe>
+                            </Row>
+                        </p>
                     </Col>
 
                 </Row>
