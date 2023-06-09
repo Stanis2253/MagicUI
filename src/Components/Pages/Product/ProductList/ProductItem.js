@@ -1,30 +1,32 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import {Button} from "react-bootstrap";
 import "./ProductItem.css"
+import img from '../../../Resources/HomeImg/chainsawCard.jpg';
+const ProductItem = ({props}) => {
+    console.log(props);
 
-const ProductItem = (props) => {
     return (
-        <div className={"productItem"}>
+        <div className="productItem">
             <Row>
-                <Col >
-                    <img className={"imageProduct"} src={props.Path}/>
+                <Col>
+                    <img className={"imageProduct"} src={img}/>
                 </Col>
                 <Col>
                     <Row>
                         <h5>
-                            {props.Category + " " + props.Manufacturer+ " " + props.ProductName}
+                            {props.name}
                         </h5>
                     </Row>
                     <Row>
                         <p>
-                            {props.ShortDes}
+                            {props.shortDesc}
                         </p>
                     </Row>
                     <Row>
                         <Col>
                             <p>
-                                Цена:
+                                Цена: 10000
                             </p>
                         </Col>
                         <Col>

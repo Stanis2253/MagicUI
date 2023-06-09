@@ -1,0 +1,15 @@
+.inputAuth{
+    justify-self: center;
+    align-self: center;
+
+    width: 70%;
+    border-radius: 15px;
+}
+
+.formAuth{
+    display: grid;
+    border-radius: 15px;
+    margin: auto;
+    height: 500px;
+    background-color: var(--secondary-color);
+}
